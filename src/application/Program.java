@@ -37,5 +37,15 @@ public class Program {
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted! Seller ID = " + newSeller.getId());
 		System.out.println();
+		
+		
+		System.out.println("--- TEST 5: seller update ---");
+		seller = sellerDao.findById(8);
+		seller.setName("Dibraldinho");
+		seller.setEmail("dibra@gmail.gol");
+		seller.setBaseSalary(999999.99);
+		sellerDao.update(seller);
+		System.out.println(seller);
+		System.out.println();
 	}
 }
