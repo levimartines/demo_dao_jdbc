@@ -13,7 +13,7 @@ public class Program {
 	public static void main(String[] args) {	
 		Scanner sc = new Scanner(System.in);
 		SellerDao sellerDao = DaoFactory.createSellerDao();
-		/*
+		
 		System.out.println("--- TEST 1: findById ---");
 		Seller seller = sellerDao.findById(6);
 		System.out.println(seller);
@@ -48,7 +48,7 @@ public class Program {
 		sellerDao.update(seller);
 		System.out.println(seller);
 		System.out.println();
-		*/
+		
 		System.out.println("--- TEST 6: seller delete");
 		System.out.println("Enter id for delete test: ");
 		int id = sc.nextInt();
